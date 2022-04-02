@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1526052435 source:/media/ubuntu/usbdata/Informatique/C - C++/structure/structure/main.c
+	<stdio.h>
+	<stdlib.h>
+

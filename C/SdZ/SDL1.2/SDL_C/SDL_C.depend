@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1526392665 source:/media/ubuntu/usbdata/Informatique/C - C++/secu/SDL_C/main.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+
+1526725421 source:/media/ubuntu/usbdata/Informatique/C - C++/SDL/SDL_C/main.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+

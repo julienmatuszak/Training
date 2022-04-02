@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+<head>
+<title>
+                            Page d&#039;erreur perso - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#e95325" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=1" />
+<meta name="theme-color" content="#E95325">
+<link rel="icon" sizes="144x144" href="/fav-icon.png?v=1">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-iphone-retina-display.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-ipad-retina-display.png" />
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" />
+<link rel="shortcut icon" href="/favicon.ico?370f781" />
+<link href="/bundles/common/css/master-84718920.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/bundles/course/css/main-46ba6659.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1521868576000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            isPremium: 'false',
+            anonymous: 'true'
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: '370f781',
+        contactMail: 'hello\x40openclassrooms.com',
+        adyenPublicKey: '10001\x7C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        cdnImage: true,
+        layer: {
+            appId: 'layer\x3A\x2F\x2F\x2Fapps\x2Fstaging\x2F7757c53a\x2Db2ba\x2D11e5\x2Db2a6\x2D2584730b1501',
+            identityProviderUrl: '\x2Fajax\x2Fconversations\x2Fget\x2Didentity\x2Dtoken'
+        },
+        algolia: {
+            appId: 'JGRXRFVQM0',
+            apiKey: 'dfbdea500cb0b5f46e449ad334916c44',
+            indexName: 'prod_v2_COURSES_fr'
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\x2Fcomponents\x2Fuser\x2Daccept\x2Dconsent\x2Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+</script>
+<script>    
+    App.data = App.data || {};
+App.data.currentCourse = {"courseId":1085366,"courseTitle":"Page d'erreur perso","courseSlug":"page-d-erreur-perso","courseLanguage":"fr","isIntroduction":true,"isCertifying":false};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+</script>
+<script type="application/ld+json">
+        {"@context":"http:\/\/schema.org","@type":"Course","name":"Page d'erreur perso","description":"Page d'erreur perso","provider":{"@type":"Organization","name":"OpenClassrooms","sameAs":"https:\/\/openclassrooms.com\/"}}
+        </script>
+<meta property="og:locale" content="fr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Page d&#039;erreur perso" />
+<meta property="og:url" content="https://openclassrooms.com/courses/page-d-erreur-perso" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://static.oc-static.com/prod/courses/course_teaser_picture_default.jpg" />
+<meta property="og:description" content="" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Page d&#039;erreur perso" />
+<meta name="twitter:image" content="https://static.oc-static.com/prod/courses/course_teaser_picture_default.jpg" />
+<meta name="twitter:description" content="" />
+</head>
+<body class="course oc-body ">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li>
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<div id="react_root"></div>
+<script id="_EVENTS-PAGE" type="application/json">
+        {
+            "type": "page",
+            "integrations": {
+                "HubSpot": false
+            }
+        }
+    </script>
+<header role="banner" id="oc-header" class="js-tabs-mobile mainHeader  ">
+<!--[if lt IE 10]>
+<div class="disclaimer  disclaimer-error">
+    Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</div>
+<![endif]-->
+
+<div id="ie-ten-disclaimer" class="disclaimer disclaimer-error" style="display:none">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</div>
+<script>
+    if (document.documentMode === 10) {
+        document.getElementById('ie-ten-disclaimer').style.display = 'block';
+    }
+</script>
+
+<noscript>
+    <div class="disclaimer  disclaimer--error">
+        Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+    </div>
+</noscript>
+<div class="disclaimer  disclaimer--info hidden  js-cookie-disclaimer">
+<div class="disclaimer__wrapper">
+<span class="disclaimer__content">
+Bienvenue sur OpenClassrooms ! En poursuivant votre navigation, vous acceptez l'utilisation de cookies. <a href="https://openclassrooms.com/privacy-policy#personal-data-gathering">En savoir plus</a>
+</span>
+<span class="disclaimer__actions">
+<a href="#" role="button" class="disclaimer__button  js-close-button">ok</a>
+</span>
+</div>
+</div>
+<div class="mainHeader__wrapper  grid-wrapper">
+<div class="mainHeader__inner  grid-inner">
+<a href="https://openclassrooms.com/" class="mainHeader__logo">
+<span class="a11y">OpenClassrooms.com</span>
+</a>
+<div class="mainHeader__content">
+<div id="tab-main" class="mainHeader__tabs">
+<div class="mainHeader__container mainHeader__container--mainMenu">
+<nav role="navigation" aria-label="Menu principal">
+<ul class="mainTopNav">
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/paths">Parcours</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/courses">Cours</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/forum/">Forums</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item" href="https://openclassrooms.com/premium">Premium</a>
+</li>
+<li class="mainTopNav__itemContainer">
+<a class="mainTopNav__item u--colorBusiness" lang="en" href="https://openclassrooms.com/for-business">For Business</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="mainHeader__container  mainHeader__container--search">
+<div id="tab-search" class="mainHeader__search  js-header-searchContainer">
+<div role="search" class="js-courseSearch  topSearchBox">
+<form class="js-courseSearch-form  oc-form" action="https://openclassrooms.com/courses" method="get">
+<div class="js-courseSearch-inputGroup oc-form__widget  inputGroup topSearchBox__inner u--block">
+<i class="topSearchBox__icon icon-search"></i>
+<input id="algolia-search-input" role="searchbox" type="search" class="js-courseSearch-input oc-form__control inputGroup__input topSearchBox__input" disabled title="Rechercher" autocomplete="off" data-option_source="https://openclassrooms.com/components/courses/search?q=<%= term %>" placeholder="Rechercher" aria-label="Rechercher" name="q" />
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="mainHeader__container  mainHeader__container--login">
+<a href="https://openclassrooms.com/register" class="mainHeader__actionButton  button button--primary js-popin-activator" data-popin-selector="#popin-sign-in" role="button">
+S&#039;inscrire
+</a>
+<a href="https://openclassrooms.com/login" class="mainHeader__actionButton  button button--secondary js-popin-activator" data-popin-selector="#popin-log-in" role="button">
+Se connecter
+</a>
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-sign-in_popin_title" class="popin popin--small  js-popin" id="popin-sign-in">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<h3 id="popin-sign-in_popin_title" class="popin__title  js-popin-title">Inscription</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<div class="formLogin formLogin--smallSize">
+<ul class="table table--fullwidth u--noMargin">
+<li class="formLogin__column">
+<a class="button button--facebook  button--fullwidth formLogin__facebook" href="https://www.facebook.com/v2.7/dialog/oauth?client_id=277769842283905&amp;state=0b0408b86bbdfd12e34e3f6ebc8840d2&amp;response_type=code&amp;sdk=php-sdk-5.6.2&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_facebook&amp;scope=public_profile%2Cemail%2Cuser_birthday">
+<i aria-hidden="true" class="icon-facebook"></i>S&#039;inscrire avec Facebook
+</a>
+<a class="button button--google  button--fullwidth formLogin__google" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=132418960718-jdnmpug3g9e6ub2p41ergcci1492qh82.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_google&amp;state&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;approval_prompt=auto">
+<i aria-hidden="true" class="icon-google"></i>S&#039;inscrire avec Google
+</a>
+</li>
+<li class="formLogin__column">
+<form name="register" method="post" action="https://openclassrooms.com/register" class="js-registerForm oc-form">
+<div class="accessibility-hidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Wonder&nbsp;
+<abbr class="oc-form__required js-form-required wonder oc-form__required-hidden" title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="register_wonder" name="register[wonder]" tabindex="-1" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Prénom&nbsp;
+<abbr class="oc-form__required js-form-required firstName " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="register_firstName" name="register[firstName]" required="required" maxlength="100" autofocus="autofocus" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Nom&nbsp;
+<abbr class="oc-form__required js-form-required lastName " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="register_lastName" name="register[lastName]" required="required" maxlength="100" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Adresse email&nbsp;
+<abbr class="oc-form__required js-form-required email " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="email" id="register_email" name="register[email]" required="required" maxlength="80" data-check-email="1" class=" textInput textInput--email" /></span></label>
+<p>
+<em class="formLogin__infoLabel">
+Vous recevrez votre mot de passe sur cette adresse email.
+</em>
+</p>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row  oc-form__row--reversed  "><span class="oc-form__widget"><span class="ocCheckbox"><input type="checkbox" id="register_terms" name="register[terms]" required="required" class="" value="1" /><span class="ocCheckbox__check"></span></span></span><span class="oc-form__label-text"><span class="oc-form__label-text ">
+J'ai lu et j'accepte les <a target="_blank" href="https://openclassrooms.com/terms-conditions">Conditions Générales d'Utilisation</a>.&nbsp;
+<abbr class="oc-form__required js-form-required terms " title="requis"><span>*</span></abbr></span></span></label>
+</div>
+<div class="oc-form__group  center-text">
+<button type="submit" id="register_create" name="register[create]" class="button button--primary button"> S'inscrire</button>
+</div>
+<input type="hidden" id="register__target_path" name="register[_target_path]" class=" textInput textInput--hidden" value="https://openclassrooms.com/courses/page-d-erreur-perso" /><input type="hidden" id="register__token" name="register[_token]" class=" textInput textInput--hidden" value="iqCgnp93qx63Y0wRxBh2S2xty1AC1AV929QpPKVwWBE" />
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-log-in_popin_title" class="popin popin--small  js-popin" id="popin-log-in">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<h3 id="popin-log-in_popin_title" class="popin__title  js-popin-title">Connexion</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<div class="formLogin formLogin--smallSize">
+<ul class="table table--fullwidth u--noMargin">
+<li class="formLogin__column">
+<a class="button button--facebook button--fullwidth formLogin__facebook" href="https://www.facebook.com/v2.7/dialog/oauth?client_id=277769842283905&amp;state=0b0408b86bbdfd12e34e3f6ebc8840d2&amp;response_type=code&amp;sdk=php-sdk-5.6.2&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_facebook&amp;scope=public_profile%2Cemail%2Cuser_birthday"><i aria-hidden="true" class="icon-facebook"></i> Se connecter avec Facebook</a>
+<a class="button button--google button--fullwidth formLogin__google" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=132418960718-jdnmpug3g9e6ub2p41ergcci1492qh82.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fopenclassrooms.com%2Flogin_check_google&amp;state&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;approval_prompt=auto"><i aria-hidden="true" class="icon-google"></i> Se connecter avec Google</a>
+</li>
+<li class="formLogin__column">
+<form name="" method="post" action="https://openclassrooms.com/login_check" class=" oc-form">
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Adresse email ou nom d'utilisateur&nbsp;
+<abbr class="oc-form__required js-form-required _username " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="text" id="_username" name="_username" required="required" autofocus="autofocus" class=" textInput textInput--text" /></span></label>
+</div>
+<div class="oc-form__group oc-form--requiredHidden">
+<label class="oc-form__row    "><span class="oc-form__label-text ">
+Mot de passe&nbsp;
+<abbr class="oc-form__required js-form-required _password " title="requis"><span>*</span></abbr></span><span class="oc-form__widget formWidget "><input type="password" id="_password" name="_password" required="required" class=" textInput textInput--password" /></span></label>
+</div>
+<div class="oc-form__group">
+<label class="oc-form__row  oc-form__row--reversed  "><span class="oc-form__widget"><span class="ocCheckbox"><input type="checkbox" id="_remember_me" name="_remember_me" class="" value="1" checked="checked" /><span class="ocCheckbox__check"></span></span></span><span class="oc-form__label-text"><span class="oc-form__label-text ">
+Se souvenir de moi&nbsp;
+<abbr class="oc-form__required js-form-required _remember_me oc-form__required-hidden" title="requis"><span>*</span></abbr></span></span></label>
+</div>
+<div class="oc-form__group right-text">
+<a href="https://openclassrooms.com/set-new-password">Mot de passe oublié</a>
+</div>
+<div class="oc-form__group  center-text">
+<div>
+<button type="submit" id="login" name="login" class="button button--primary t button"> Se connecter</button></div>
+</div>
+<div class="oc-form__group  center-text">
+<input type="hidden" id="_target_path" name="_target_path" class=" textInput textInput--hidden" value="https://openclassrooms.com/courses/page-d-erreur-perso" /><input type="hidden" id="_csrf_token" name="_csrf_token" class=" textInput textInput--hidden" value="v6z-6NEh3oe6DKO_l_-h6mtpAYEnKype2cinVKezGu8" />
+</div>
+</form>
+</li>
+</ul>
+<p class="text-center space-top">
+Pas encore membre ? <a href="https://openclassrooms.com/register">Inscrivez-vous gratuitement</a> en 30s.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav role="navigation" class="icoTabs  mainHeader__tabSet">
+<div class="mainHeader__mobileNav">
+<span class="icoTabs__tab  mainHeader__tabLogin">
+<a href="https://openclassrooms.com/register" class="mainHeader__actionButton  button button--primary js-popin-activator" data-popin-selector="#popin-sign-in" role="button">
+S&#039;inscrire
+</a>
+<a href="https://openclassrooms.com/login" class="mainHeader__actionButton  button button--secondary js-popin-activator" data-popin-selector="#popin-log-in" role="button">
+Se connecter
+</a>
+</span>
+<a class="js-tabs-tab  icoTabs__tab  mainHeader__tabSearch" href="#tab-search">
+<span class="accessibility-hidden">Rechercher</span>
+<i class="icon-search  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  mainHeader__tabCourseMenu  is-disabled" href="#tab-courseMenu">
+<span class="accessibility-hidden">Cours</span>
+<i class="icon-plus  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  is-disabled" href="#tab-courseEditMenu">
+<span class="accessibility-hidden">Créer un cours</span>
+<i class="icon-plus  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab  is-disabled" data-tabs-default="true" href="#tab-searchMenu">
+<span class="accessibility-hidden">Rechercher</span>
+<i class="icon-search  icoTabs__icon"></i>
+</a>
+<a class="js-tabs-tab  icoTabs__tab" href="#tab-main">
+<span class="accessibility-hidden">Menu principal</span>
+<i class="icon-menu  icoTabs__icon"></i>
+</a>
+</div>
+</nav>
+<div class="js-tabs-content  mainHeader__content"></div>
+</div>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div id="mainSearch" class="mainSearch"></div>
+</div>
+</div>
+<div id="mainContentWithHeader">
+<div id="pre-main-part">
+<section class="inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item breadcrumb__item--home " itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/" itemprop="url">
+<span itemprop="title">Accueil</span>
+</a>
+</li>
+<li class="breadcrumb__item  " itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://openclassrooms.com/courses" itemprop="url">
+<span itemprop="title">Cours</span>
+</a>
+</li>
+<li class="breadcrumb__item  breadcrumb__item--current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Page d&#039;erreur perso
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article">
+<header id="course-header" class="course-header" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="course-header__topPart"><div class="course-header__info"><a itemprop="url" href="/courses/page-d-erreur-perso"><h1 data-course-title="Page d&#039;erreur perso">Page d&#039;erreur perso</h1></a><span class="course-header__updatedTime visible-l">Mis à jour le 29/10/2013</span></div></div></div></div><div class="course-header__details-container"><div class="grid-wrapper"><div class="grid-inner"><div class="course-header__details  iconBar"><div class="course-header__detailsGroup  course-header__detailsGroup--formats iconBar__group"><ul data-option_popinselector="#popin-formats-availables" class="course-types iconBar__list js-course-formats-bar"><li class="iconBar__item  course-types__item  js-tooltip" title="Ce cours est visible gratuitement en ligne."><a href="/courses/page-d-erreur-perso" title="Ce cours est visible gratuitement en ligne."><i class="icon-desktop  course-types__icon"></i><span class="course-header__format-current"></span></a></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#039;est pas encore en vidéo."><span><i class="icon-video course-types__icon"></i></span></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#039;existe pas encore en livre ou ebook."><span><i class="icon-book  course-types__icon"></i></span></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours."><a><i class="icon-badge  course-types__icon"></i></a></li><li class="iconBar__item  course-types__item iconBar__item--dimmed js-tooltip" title="Ce cours n&#039;est pas encore diplômant et ne vous permet pas d&#039;obtenir des crédits universitaires européens (ECTS)."><span><i class="icon-hat  course-types__icon"></i></span></li></ul></div><div class="course-header__detailsGroup  course-header__detailsGroup--info  iconBar__group"><ul class="iconBar__list"><li class="iconBar__item"><i class="icon-level iconBar__icon"></i><span class="iconBar__label">
+Facile
+</span></li></ul></div><div class="course-header__detailsGroup course-header__detailsGroup--licences iconBar__group"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/2.0"><span class="iconBar__label">Licence</span><ul class="iconBar__list"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccnc iconBar__icon" title="NC"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="/courses/page-d-erreur-perso">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="/courses/page-d-erreur-perso">gratuitement en ligne</a>.</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div class="relative js-sidebar-container">
+<div class="static">
+<div class="tooltipMessage tooltipMessage--noArrow">
+<i class="tooltipMessage__icon  icon-lock"></i>
+<a href="/login" class="js-popin-activator" data-popin-selector="#popin-log-in">Connectez-vous</a> ou <a href="/register" class="js-popin-activator" data-popin-selector="#popin-sign-in">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<h2 class="accessibility-hidden">Introduction du cours</h2>
+<div class="text-center  spacer-big">
+<div>
+<a href="/login" class="button button--primary button--highlighting js-popin-activator" data-popin-selector="#popin-log-in">
+<i class="icon-lock"></i>
+Commencer le cours
+</a>
+</div>
+<a class="button button--alternative" href="/how-does-it-work">
+<span>Comment ça marche ?</span>
+</a>
+</div>
+<section>
+<div itemprop="articleBody" data-page-indentifier="/courses/page-d-erreur-perso" class="js-isRestrictablePage js-course-container js-smilize js-course-content">
+<div class="userContent userContent--smallCourse js-userContent">
+<p id="r-1085371" data-claire-element-id="1086561">Vous en avez marre de voir les pages habituelles de Mozilla Firefox ? Opera ? Ou encore… Internet Explorer ? :-° <br /> 404 Not Found ? 500 Internal error ?<br /> Grâce à ce tutoriel, vous pourrez personnaliser ces pages !</p><aside id="r-1085373" data-claire-element-id="1086563" data-claire-semantic="error"><p id="r-1085372" data-claire-element-id="1086562">Cela risque cependant de ne pas fonctionner sur certains hébergeurs : si c'est le cas, faites-le-moi savoir.</p></aside><h2 id="r-1085432" data-claire-element-id="1086622">Explications</h2><p id="r-1085374" data-claire-element-id="1086564">Je vais vous expliquer ici comment créer une page d'erreur personnalisée, comme celle du Site du Zéro.<br /> Rendez-vous par exemple sur <a href="http://www.siteduzero.com/dkljd">http://www.siteduzero.com/dkljd</a> : ça va vous afficher une erreur 404. Ou quand le site est saturé, c'est une erreur 500.<br /> C'est un truc assez court, mais bien pratique !</p><p id="r-1085375" data-claire-element-id="1086565">Matériel nécessaire :</p><ul id="r-1085386" data-claire-element-id="1086576"><li id="r-1085377" data-claire-element-id="1086567"><p id="r-1085376" data-claire-element-id="1086566">des ciseaux ;</p></li><li id="r-1085379" data-claire-element-id="1086569"><p id="r-1085378" data-claire-element-id="1086568">un crayon ;</p></li><li id="r-1085381" data-claire-element-id="1086571"><p id="r-1085380" data-claire-element-id="1086570">de la colle ;</p></li><li id="r-1085383" data-claire-element-id="1086573"><p id="r-1085382" data-claire-element-id="1086572">une gomme ;</p></li><li id="r-1085385" data-claire-element-id="1086575"><p id="r-1085384" data-claire-element-id="1086574">un hébergeur acceptant le PHP et les .htaccess.</p></li></ul><p id="r-1085387" data-claire-element-id="1086577">Créez maintenant un fichier .htaccess que vous placerez à la racine de votre site, et insérez-y ceci (en remplaçant bien sûr « <a href="http://www.siteduzero.com">http://www.siteduzero.com</a> » par l'adresse de votre site web) :</p><pre id="r-1085388" data-claire-element-id="1086578"><code data-claire-semantic="apache">ErrorDocument 400 http://www.siteduzero.com/400.php
+ErrorDocument 401 http://www.siteduzero.com/401.php
+ErrorDocument 402 http://www.siteduzero.com/402.php
+ErrorDocument 403 http://www.siteduzero.com/403.php
+ErrorDocument 404 http://www.siteduzero.com/404.php
+ErrorDocument 405 http://www.siteduzero.com/405.php
+ErrorDocument 500 http://www.siteduzero.com/500.php
+ErrorDocument 501 http://www.siteduzero.com/501.php
+ErrorDocument 502 http://www.siteduzero.com/502.php
+ErrorDocument 503 http://www.siteduzero.com/503.php
+ErrorDocument 504 http://www.siteduzero.com/504.php
+ErrorDocument 505 http://www.siteduzero.com/505.php
+</code></pre><aside id="r-1085390" data-claire-element-id="1086580" data-claire-semantic="warning"><p id="r-1085389" data-claire-element-id="1086579">Mettez les liens en absolu pour l'instant, nous allons voir dans quel cas les utiliser en relatif.</p></aside><div id="r-1085392" data-claire-element-id="1086582" data-claire-semantic="question"><p id="r-1085391" data-claire-element-id="1086581">C'est bien beau, les 400, 401, 402, 403, 404, 500… mais ça veut dire quoi ?</p></div><aside id="r-1085418" data-claire-element-id="1086608" data-claire-semantic="information"><ul id="r-1085417" data-claire-element-id="1086607"><li id="r-1085394" data-claire-element-id="1086584"><p id="r-1085393" data-claire-element-id="1086583">400 : échec de l'analyse HTTP.</p></li><li id="r-1085396" data-claire-element-id="1086586"><p id="r-1085395" data-claire-element-id="1086585">401 : mauvais pseudo ou mot de passe dans le .htaccess.</p></li><li id="r-1085398" data-claire-element-id="1086588"><p id="r-1085397" data-claire-element-id="1086587">402 : le client doit reformuler sa demande avec les bonnes données de paiement.</p></li><li id="r-1085400" data-claire-element-id="1086590"><p id="r-1085399" data-claire-element-id="1086589">403 : requête interdite.</p></li><li id="r-1085402" data-claire-element-id="1086592"><p id="r-1085401" data-claire-element-id="1086591">404 : page non trouvée.</p></li><li id="r-1085404" data-claire-element-id="1086594"><p id="r-1085403" data-claire-element-id="1086593">405 : méthode non autorisée.</p></li><li id="r-1085406" data-claire-element-id="1086596"><p id="r-1085405" data-claire-element-id="1086595">500 : erreur interne au serveur ou serveur saturé.</p></li><li id="r-1085408" data-claire-element-id="1086598"><p id="r-1085407" data-claire-element-id="1086597">501 : le serveur ne supporte pas le service demandé.</p></li><li id="r-1085410" data-claire-element-id="1086600"><p id="r-1085409" data-claire-element-id="1086599">502 : mauvaise passerelle.</p></li><li id="r-1085412" data-claire-element-id="1086602"><p id="r-1085411" data-claire-element-id="1086601">503 : service indisponible.</p></li><li id="r-1085414" data-claire-element-id="1086604"><p id="r-1085413" data-claire-element-id="1086603">504 : trop de temps à la réponse.</p></li><li id="r-1085416" data-claire-element-id="1086606"><p id="r-1085415" data-claire-element-id="1086605">505 : version HTTP non supportée.</p></li></ul></aside><p id="r-1085419" data-claire-element-id="1086609">Maintenant, vous devez vous dire : « Je mets quoi dans 401.php ?… »</p><p id="r-1085420" data-claire-element-id="1086610">Vous y mettez ce que vous voulez.<br /> Exemple pour 401.php : « Vous avez entré un mauvais pseudo ou mot de passe. »<br /> Exemple pour 404.php : « Page non trouvée. »<br /> Vous l'avez compris, les erreurs 400 sont des erreurs du client, et les 500 des erreurs du serveur ; je vous laisse mettre tout ça en forme ! :-°</p><aside id="r-1085422" data-claire-element-id="1086612" data-claire-semantic="warning"><p id="r-1085421" data-claire-element-id="1086611">Le problème, c'est que ça va renvoyer vers une autre erreur : l'erreur 200 (page qui s'est correctement chargée). Je ne sais donc pas si on peut l'appeler une « erreur ».</p></aside><p id="r-1085423" data-claire-element-id="1086613">Ainsi, avec les sites de référencement ayant un robot, comme Google ou MSN Search, il y a un léger problème : le moteur de recherche n'est pas en mesure de distinguer si la page est une page d'erreur ou non. Il affichera alors des liens vers des pages d'erreur lors d'une recherche.</p><pre id="r-1085424" data-claire-element-id="1086614"><code data-claire-semantic="apache">ErrorDocument 400 /400.php
+ErrorDocument 401 /401.php
+ErrorDocument 402 /402.php
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 405 /405.php
+ErrorDocument 500 /500.php
+ErrorDocument 501 /501.php
+ErrorDocument 502 /502.php
+ErrorDocument 503 /503.php
+ErrorDocument 504 /504.php
+ErrorDocument 505 /505.php
+</code></pre><p id="r-1085425" data-claire-element-id="1086615">Vous pouvez également écrire un petit message sans créer de nouvelle page, comme ceci :</p><pre id="r-1085426" data-claire-element-id="1086616"><code data-claire-semantic="apache">ErrorDocument 400 &quot;Échec de l'analyse HTTP.&quot;
+ErrorDocument 401 &quot;Mauvais pseudo ou mot de passe.&quot;
+ErrorDocument 402 &quot;Le client doit reformuler sa demande avec les bonnes données de paiement.&quot;
+ErrorDocument 403 &quot;…&quot;
+ErrorDocument 404 &quot;&quot;
+ErrorDocument 405 &quot;&quot;
+ErrorDocument 500 &quot;&quot;
+ErrorDocument 501 &quot;&quot;
+ErrorDocument 502 &quot;&quot;
+ErrorDocument 503 &quot;&quot;
+ErrorDocument 504 &quot;&quot;
+ErrorDocument 505 &quot;&quot;
+</code></pre><p id="r-1085427" data-claire-element-id="1086617">Vous l'aurez compris : vous devez inscrire le message d'erreur entre les guillemets.</p><p id="r-1085428" data-claire-element-id="1086618">Mais il est énervant de devoir créer une nouvelle page à chaque fois ! Eh bien, grâce à du PHP, vous pouvez n'en créer qu'une contenant toutes les erreurs ; regardez :</p><pre id="r-1085429" data-claire-element-id="1086619"><code data-claire-semantic="apache">ErrorDocument 400 /erreur.php?erreur=400
+ErrorDocument 401 /erreur.php?erreur=401
+ErrorDocument 402 /erreur.php?erreur=402
+ErrorDocument 403 /erreur.php?erreur=403
+ErrorDocument 404 /erreur.php?erreur=404
+ErrorDocument 405 /erreur.php?erreur=405
+ErrorDocument 500 /erreur.php?erreur=500
+ErrorDocument 501 /erreur.php?erreur=501
+ErrorDocument 502 /erreur.php?erreur=502
+ErrorDocument 503 /erreur.php?erreur=503
+ErrorDocument 504 /erreur.php?erreur=504
+ErrorDocument 505 /erreur.php?erreur=505
+</code></pre><p id="r-1085430" data-claire-element-id="1086620">On va ensuite savoir quelle erreur afficher dans la page erreur.php grâce à la valeur du GET<em>erreur</em>.</p><pre id="r-1085431" data-claire-element-id="1086621"><code data-claire-semantic="html+php">&lt;?php
+switch($_GET['erreur'])
+{
+   case '400':
+   echo 'Échec de l\'analyse HTTP.';
+   break;
+   case '401':
+   echo 'Le pseudo ou le mot de passe n\'est pas correct !';
+   break;
+   case '402':
+   echo 'Le client doit reformuler sa demande avec les bonnes données de paiement.';
+   break;
+   case '403':
+   echo 'Requête interdite !';
+   break;
+   case '404':
+   echo 'La page n\'existe pas ou plus !';
+   break;
+   case '405':
+   echo 'Méthode non autorisée.';
+   break;
+   case '500':
+   echo 'Erreur interne au serveur ou serveur saturé.';
+   break;
+   case '501':
+   echo 'Le serveur ne supporte pas le service demandé.';
+   break;
+   case '502':
+   echo 'Mauvaise passerelle.';
+   break;
+   case '503':
+   echo ' Service indisponible.';
+   break;
+   case '504':
+   echo 'Trop de temps à la réponse.';
+   break;
+   case '505':
+   echo 'Version HTTP non supportée.';
+   break;
+   default:
+   echo 'Erreur !';
+}
+?&gt;
+</code></pre><h2 id="r-1085445" data-claire-element-id="1086635">S'assurer que les robots ne viendront pas</h2><p id="r-1085433" data-claire-element-id="1086623">Comme je l'ai dit plus haut, il y a un risque que vos pages d'erreur soient référencées dans les moteurs de recherche, nous allons donc leur interdire l'accès.</p><h3 id="r-1085444" data-claire-element-id="1086634">Méthode</h3><p id="r-1085434" data-claire-element-id="1086624">Nous allons implanter un fichier robots.txt à la racine de notre site.<br /> Il aura pour but d'indiquer à tel ou tel robot de ne pas visionner telle ou telle page.</p><p id="r-1085435" data-claire-element-id="1086625">Voici comment se présente ce fichier :</p><pre id="r-1085436" data-claire-element-id="1086626"><code data-claire-semantic="text">User-Agent: 
+Disallow:</code></pre><p id="r-1085437" data-claire-element-id="1086627">À la suite de <strong>User-Agent</strong>, vous inscrirez la liste des robots dont vous souhaitez interdire l'accès. Nous allons toutefois utiliser ici l'étoile (*), qui va interdire l'accès à tous les robots.<br /> Et après <strong>Disallow</strong>, vous indiquerez la liste des pages à bloquer, les unes après les autres, en réécrivant « Disallow » pour chaque page :</p><pre id="r-1085438" data-claire-element-id="1086628"><code data-claire-semantic="text">User-Agent: *
+Disallow: /400.php
+Disallow: /401.php
+Disallow: /402.php
+Disallow: /403.php</code></pre><div id="r-1085440" data-claire-element-id="1086630" data-claire-semantic="question"><p id="r-1085439" data-claire-element-id="1086629">Stop ! Je ne vais pas toutes les mettre alors qu'il existe une trentaine d'erreurs, si ?</p></div><p id="r-1085441" data-claire-element-id="1086631">Non, vous pouvez interdire l'accès à tout un dossier. Je vous conseille donc vivement d'enregistrer ces pages dans un dossier à part et de ne pas oublier de changer l'URI ou l'URL (c’est-à-dire l'adresse) que vous avez mise dans le fichier .htaccess.<br /> Pour interdire l'accès à un dossier, pas de mystère, cela se passe comme pour les fichiers.</p><pre id="r-1085442" data-claire-element-id="1086632"><code data-claire-semantic="text">User-Agent: *
+Disallow: /nom_du_dossier_ou_se_trouvent_les_erreurs/</code></pre><p id="r-1085443" data-claire-element-id="1086633">C'est tout de suite plus lisible, n'est-ce pas ?</p><h2 id="r-1085463" data-claire-element-id="1086653">Annexes</h2><p id="r-1085446" data-claire-element-id="1086636">Ces annexes vont vous permettre de comprendre quelques petites choses qui auraient pu être incomprises ou mal comprises.</p><h3 id="r-1085456" data-claire-element-id="1086646">Annexe 1 : racine du site</h3><h4 id="r-1085448" data-claire-element-id="1086638">Explication</h4><p id="r-1085447" data-claire-element-id="1086637">La racine du site est la base de la hiérarchie de votre site, c'est là où le visiteur arrive lorsqu'il entre l'adresse du site dans la barre d'adresse de son navigateur (ce qui suppose qu'il n'y ait au préalable aucune redirection).</p><h4 id="r-1085455" data-claire-element-id="1086645">Exemples d'arborescences</h4><p id="r-1085449" data-claire-element-id="1086639">Si vous possédez un hébergement mutualisé, vous n'aurez accès qu'à une partie restreinte du serveur. Par exemple, sous Linux, vous pourriez avoir accès à la partie /home/www/heberg_id_674123/.<br /> Seule la partie après heberg_id_674123 vous sera visible, aucun accès ne vous sera autorisé dans un dossier parent.</p><p id="r-1085450" data-claire-element-id="1086640">Les hébergeurs ont plusieurs solutions : soit il mettent le dossier heberg_id_674123 comme dossier racine du site, soit ils vont vous permettre de ne pas mettre de fichier dans la partie publique mais dans une partie privée.</p><p id="r-1085451" data-claire-element-id="1086641"><strong>Exemples :</strong></p><p id="r-1085452" data-claire-element-id="1086642">/home/www/ [...]<br /> ................/heberg_id_674121/[...]<br /> ................/heberg_id_674122/[...]<br /> ................/heberg_id_674123/private<br /> ................................./public ← Racine du site</p><p id="r-1085453" data-claire-element-id="1086643">/home/www/ [...]<br /> ................/heberg_id_674121/[...]<br /> ................/heberg_id_674122/[...]<br /> ................/heberg_id_674123/<br /> ................................./www ← Racine du site</p><p id="r-1085454" data-claire-element-id="1086644">/home/www/ [...]<br /> ................/heberg_id_674121/[...]<br /> ................/heberg_id_674122/[...]<br /> ................/heberg_id_674123/ ← Racine du site</p><h3 id="r-1085462" data-claire-element-id="1086652">Annexe 2 : robots.txt</h3><p id="r-1085457" data-claire-element-id="1086647">Le fichier robots.txt est un fichier présent à la racine du site qui contient des règles pour les robots (de Google, Yahoo, etc.) qui viendraient sur votre site. Ce fichier est vérifié et respecté par tous les robots dignes de ce nom (donc les plus connus), mais beaucoup ne respectent pas ces règles, voire ne les lisent même pas. Ne vous faites donc pas trop d'illusions concernant ce fichier : c'est respecté par une petite poignée de robots, mais pas par tous.</p><p id="r-1085458" data-claire-element-id="1086648">Et voilà : ce n'est pas plus beau ainsi ?</p><p id="r-1085459" data-claire-element-id="1086649">Bien entendu, vous pouvez créer votre propre mise en page, avec du CSS par exemple ! Mais bon… que ça ne devienne pas une usine à gaz. :-°</p><p id="r-1085460" data-claire-element-id="1086650">Merci à tous les Zéros pour l'aide et le soutien qu'ils m'ont apportés dans l'élaboration de ce tutoriel.</p><p id="r-1085461" data-claire-element-id="1086651">Veuillez s'il vous plaît me signaler tout problème par MP.</p>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<h3 id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</h3>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="popin-not-certifying-yet_180317" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <a href='/premium'><i class='icon-star'></i> Devenez Premium</a>
+                    ">
+<img alt="Exemple de certificat de réussite" src="//static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div id="popin-not-certifying-yet_488977" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <a href='/premium'><i class='icon-star'></i> Devenez Premium</a>
+                    ">
+<img alt="Exemple de certificat de réussite" src="//static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav>
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block col-nav__block--premium">
+<strong class="not-certifying col-nav__notCertifying">Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.</strong>
+</div>
+<div class="col-nav__block col-nav__block--institution">
+<h2>Créé par</h2>
+<a href="/partners/openclassrooms" target="_blank">
+<span data-image-cdn-attr-src="https://sdz-upload.s3.amazonaws.com/prod/partners/img/logo_logo-oc.png" data-image-cdn-attr-alt="logo OpenClassrooms" data-image-cdn-width="165" data-image-cdn-attr-class="col-nav__institutionLogo"></span>
+<p class="col-nav__block--institutionDescription">
+OpenClassrooms, Leading <span class='nowrap'>E-Learning<span> Platform in Europe
+</p>
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Page d&#039;erreur perso @OCFrance',
+        mailTitle: 'Cours &quot;Page d&#039;erreur perso&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Page d&#039;erreur perso&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--googlePlus  addthis_button_google_plusone_share  js-socialButtons-btn" data-tooltip="Partagez sur Google+">
+<i class="roundIcon__icon  icon-google"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authors course-bottom__category">
+<h2 class="highlighted">
+Le professeur
+</h2>
+<div>
+<a itemprop="author" itemscope itemtype="http://schema.org/Person" href="/membres/kakyokuu-74626" class="no-underlined">
+<div class="course-bottom__text-illustrated">
+<span data-author="Erwan Simonin" data-image-cdn-background-image="https://openclassrooms.com/bundles/common/images/avatar_defaut.png" data-image-cdn-width="120"></span>
+<h4 itemprop="name">Erwan Simonin</h4>
+</div>
+</a>
+</div>
+</div>
+<div class="courseFooter__courseFormat course-bottom__category">
+<h2 class="highlighted">Découvrez aussi ce cours en...</h2>
+<ul class="course-bottom__format">
+<li>
+<a href="/old-courses-pdf" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-pdf"></i>
+</div>
+<div class="course-bottom__format-entitled">
+PDF
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<footer role="contentinfo" class="footer">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="footer__item  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: 'closed'">
+<h3 class="footer__itemTitle foldable__button  js-foldable-button">
+OpenClassrooms
+<i class="icon-next  foldable__icon"></i>
+</h3>
+<ul class="footer__linksList foldable__content">
+<li class="footer__linksListItem">
+<a href="http://jobs.openclassrooms.com" target="_blank" class="footer__link">Recrutement</a>
+</li>
+<li class="footer__linksListItem">
+<a href="http://mentor-fr.jobs.openclassrooms.com/" target="_blank" class="footer__link">Devenez mentor</a>
+</li>
+<li class="footer__linksListItem">
+<a href="#" class="js-zendesk-show footer__link">Nous contacter</a>
+</li>
+</ul>
+</div>
+<div class="footer__item  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: 'closed'">
+<h3 class="footer__itemTitle foldable__button  js-foldable-button">
+Professionnels
+<i class="icon-next  foldable__icon"></i>
+ </h3>
+<ul class="footer__linksList foldable__content">
+<li class="footer__linksListItem">
+<a href="/affiliation" class="footer__link">
+Affiliation
+</a>
+</li>
+<li class="footer__linksListItem">
+<a href="/partners" class="footer__link">Partenaires</a>
+</li>
+<li class="footer__linksListItem">
+<a lang="en" href="/for-business" class="footer__link">For Business</a>
+</li>
+</ul>
+</div>
+<div class="footer__item  foldable  js-foldable" data-options="mobileOnly: true, disableOnLargeScreen: true, initialState: 'closed'">
+<h3 class="footer__itemTitle foldable__button  js-foldable-button">
+En plus
+<i class="icon-next  foldable__icon"></i>
+</h3>
+<ul class="footer__linksList foldable__content">
+<li class="footer__linksListItem">
+<a href="/about-us" class="footer__link">Qui sommes-nous ?</a>
+</li>
+<li class="footer__linksListItem">
+<a href="/how-does-it-work" class="footer__link">Fonctionnement de nos cours</a>
+</li>
+<li class="footer__linksListItem">
+<a href="/terms-conditions" class="footer__link">Conditions Générales d&#039;Utilisation</a>
+</li>
+</ul>
+</div>
+<div class="footer__item">
+<ul class="footer__linksList">
+<li class="footer__linksListItem">
+<i class="icon icon-international  footer__foldableIcon" aria-hidden="true"></i>
+<form id="footerChangeLanguageContainer" class="footer__foldableLangForm" action="/change-locale/:lang" method="POST">
+<div class="selectField__selectContainer">
+<select class="selectField__select" id="footerChangeLanguage">
+<option value="en">English</option>
+<option value="es">Español</option>
+<option value="fr" selected="selected">Français</option>
+</select>
+<div class="selectField__selectArrow"></div>
+</div>
+<input type="hidden" name="_token" value="" />
+</form>
+</li>
+<li class="footer__linksListItem">
+<ul class="footer__socialNetwork">
+<li class="footer__socialNetworkItem">
+<a href="https://www.facebook.com/openclassroomsfr/" title="Facebook" target="_blank" class="roundIcon roundIcon--facebook footer__socialButtons">
+<span class="hidden">Facebook</span>
+<i class="icon-facebook roundIcon__icon" aria-hidden="true"></i>
+</a>
+</li>
+<li class="footer__socialNetworkItem">
+<a href="https://twitter.com/ocfrance" title="Twitter" target="_blank" class="roundIcon roundIcon--twitter footer__socialButtons">
+<span class="hidden">Twitter</span>
+<i class="icon-twitter roundIcon__icon" aria-hidden="true"></i>
+ </a>
+</li>
+<li class="footer__socialNetworkItem">
+<a href="https://www.linkedin.com/company/openclassrooms" title="Linkedin" target="_blank" class="roundIcon roundIcon--linkedin footer__socialButtons">
+<span class="hidden">Linkedin</span>
+<i class="icon-linkedin roundIcon__icon" aria-hidden="true"></i>
+</a>
+</li>
+<li class="footer__socialNetworkItem">
+<a href="https://instagram.com/openclassrooms" title="Instagram" target="_blank" class="roundIcon roundIcon--instagram footer__socialButtons">
+<span class="hidden">Instagram</span>
+<i class="icon-instagram roundIcon__icon" aria-hidden="true"></i>
+</a>
+</li>
+<li class="footer__socialNetworkItem">
+<a href="https://www.youtube.com/user/TheOpenClassrooms" title="Youtube" target="_blank" class="roundIcon roundIcon--googlePlus footer__socialButtons">
+<span class="hidden">Youtube</span>
+<i class="icon-youtube-play roundIcon__icon" aria-hidden="true"></i>
+</a>
+</li>
+</ul>
+</li>
+<li class="footer__linksListItem">
+<a href="http://blog.openclassrooms.com" title="Le blog OpenClassrooms" target="_blank" class="footer__link">
+Le blog OpenClassrooms
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="grid-inner">
+<div class="footer__onlineStatus" id="react_conversation_onlineStatus"></div>
+</div>
+</div>
+</footer>
+<script type="text/javascript">
+    window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+    window.analytics.load('mou95e6tdn');
+</script>
+<script>App.scripts.push("https://cdn.polyfill.io/v2/polyfill.min.js?features=default,es6,IntersectionObserver,Array.prototype.includes,Intl.~locale.fr");</script>
+<script>App.scripts.push("/js/oc/packages/vendors-e8690938.js");</script>
+<script>App.scripts.push("/js/oc/packages/common-ae6c78b2.js");</script>
+
+<script>App.scripts.push("/js/oc/packages/courseView-bf5f8061.js");</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90dc06697a","applicationID":"20302107","transactionName":"NANaYkJXC0ICAhdYVw1Je0NDQgpcTA4AblsPB1FEVWkGXhYTEFRnAAlNRENTOlIMFBFCXTwQUVNH","queueTime":0,"applicationTime":243,"atts":"GERZFApNGEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

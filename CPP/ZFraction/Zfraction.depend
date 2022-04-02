@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1621671357 source:c:\users\lenovo\documents\informatique\cpp\zfraction\main.cpp
+	<iostream>
+	"Zfraction.h"
+
+1621671457 c:\users\lenovo\documents\informatique\cpp\zfraction\zfraction.h
+
+1621671229 source:c:\users\lenovo\documents\informatique\cpp\zfraction\zfraction.cpp
+	<iostream>
+	"Zfraction.h"
+
