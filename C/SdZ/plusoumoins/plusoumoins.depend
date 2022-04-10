@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1525091415 source:/home/ubuntu/Desktop/plusoumoins/main.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	<stdbool.h>
-

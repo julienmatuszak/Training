@@ -1,0 +1,2 @@
+## Compile
+To compile on Visual Studio on Windows system, right-click then run code and Enter or type in terminal `cd "path"\ ; if ($?) { gcc * -o "name_of_program" } ; if ($?) { .\"name_of_program" }`

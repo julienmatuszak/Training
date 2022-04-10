@@ -5,13 +5,13 @@ using namespace std;
 int main()
 {
     int age = 21;
-    int *pointeurSurAge = &age;
+    int &referenceSurAge = age;
 
-    cout << *pointeurSurAge;
+    cout << referenceSurAge;
 
-    *pointeurSurAge  = 40;
+    referenceSurAge  = 40;
 
-    cout << *pointeurSurAge;
+    cout << referenceSurAge;
 
 
     return 0;

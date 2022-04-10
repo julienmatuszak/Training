@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1526729762 source:/media/ubuntu/usbdata/Informatique/C - C++/SDL/degrade/main.c
-	<stdio.h>
-	<stdlib.h>
-	<SDL2/SDL.h>
-

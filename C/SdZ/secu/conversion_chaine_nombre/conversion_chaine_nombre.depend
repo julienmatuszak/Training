@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1526314626 source:/media/ubuntu/usbdata/Informatique/C - C++/secu/conversion_chaine_nombre/main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-
